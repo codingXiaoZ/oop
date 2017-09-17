@@ -37,7 +37,8 @@ var Carousel = (function(undefind){
 		var arrImgs = config.arrImages;
 		var iLength = 20;
 		var iWidth = $('#Carousel-show')[0].offsetWidth/iLength;
-		$('#Carousel-show').css({'height':config.size.height+'px','width':config.size.width+'px'})
+		// $('#Carousel-show').css({'height':config.size.height+'px','width':config.size.width+'px'})
+		$('#Carousel-show').css({'height':360+'px','width':800+'px'})
 
 		for(var i=0;i<iLength;i++){
 			i<iLength/2?zIndex=i:--zIndex;
