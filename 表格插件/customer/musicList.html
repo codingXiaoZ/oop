@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../productor/prid.css">
+	<script src="../productor/prid.js"></script>
+	<script>
+		var animo = [
+			{id:'001',name:'大象',type:'哺乳',weight:'1T'},
+			{id:'002',name:'熊猫',type:'哺乳',weight:'200kg'},
+			{id:'003',name:'老虎',type:'哺乳',weight:'400kg'}
+		];
+		window.onload = function(){
+
+			function delAnimal(ID){
+				for(var i=0;i<animo.length;i++){
+					if(animo[i].id==ID){
+						animo.splice(i,1);
+					}
+
+				}
+			}
+			//增加函数
+			function addAnimal(animal){
+				animo.push(animal);
+			}
+			//上传函数
+			
+			function updateAnimal(animal){
+				for(var p in animo){
+					if(animo[p].id==animal.id){
+						for(var i in animal){
+							animo[p][i]=animal[i];
+						}
+					}
+				}
+			}
+			
+			grid({
+				title:'动物信息列表',
+				data:animo,
+				container:'con',
+				key:'id',
+				delfn:delAnimal,
+				addfn:addAnimal,/*
+				updatafn:updateAnimal,*/
+				fields:[
+					{name:'id',type:'text'},
+					{name:'name',type:'text'},
+					{
+						name:'type',type:'select',
+						option:[
+							{name:'哺乳',text:'哺乳'},
+							{name:'胎生',text:'胎生'},
+							{name:'爬行',text:'爬行'}
+						]
+
+					},
+					{name:'weight',weight:'weight',type:'text'}
+					]
+			});
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="con"></div>
+</body>
+</html>
