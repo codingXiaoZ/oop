@@ -1,0 +1,23 @@
+#box{margin:0 auto;width:800px;}
+#Carousel-show{height:360px;width:800px;font-size:0;perspective:800px;transform-origin: left;}
+
+#Carousel-show>.rotate{width:25px;height:100%;transform-style:preserve-3d;position:relative;transition-property:all;transition-duration:1s;transform-origin:center center -180px;transform:rotateX(0deg);float:left;}
+#Carousel-show>div.Carousel-show{transition-property:all;transition-duration:1s;transform:rotateX(-90deg);transition-delay: 1s;
+	}
+#Carousel-show>.rotate>a{display: inline-block;width:100%;height:100%;background:#6A6262;position:absolute;left:0;top:0;}
+#Carousel-show>.rotate>a:nth-of-type(2){transform:translateZ(-360px) rotateX(90deg);transform-origin: top;top:0;}
+
+#Carousel-show>.rotate>span{height:100%;width:360px;background-color:#B0A6A6;position: absolute;top:0;}
+#Carousel-show>.rotate>span:nth-of-type(1){ transform:rotateY(90deg);transform-origin: left; }
+#Carousel-show>.rotate>span:nth-of-type(2) {-webkit-transform-origin:right;right:0; transform:rotateY(-90deg);}
+
+#Carousel-show>.Carousel-switch{position:absolute;width:100%;z-index: 15;top:50%;transform:translateY(-50%);}
+#Carousel-show>.Carousel-switch>span{height:50px;width:50px;display:inline-block;background: #EBB698;font-size:50px;line-height: 50px;text-align: center;color:#FFFFFF;cursor: pointer;border-radius: 50%;opacity:0.5;}
+#Carousel-show>.Carousel-switch>span:nth-child(1){float:left;margin-left:50px;}
+#Carousel-show>.Carousel-switch>span:nth-child(2){float:right;margin-right:50px;}
+
+
+#Carousel-option{text-align:center;}
+#Carousel-option>span{display:inline-block;margin-top:30px;margin-left:5%;height:50px;width:50px;background:#DDA26E;border-radius: 50%;line-height: 50px;text-align: center;font-size: 30px;color:#FFFFFF;cursor: pointer;}
+#Carousel-option>span.Carousel-active{background:#EA7E4B;}
+
