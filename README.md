@@ -31,8 +31,10 @@ $(function(){
 
 ## 表格组件
 
-<a href="http://tclound.com/oop/%E8%A1%A8%E6%A0%BC%E6%8F%92%E4%BB%B6/customer/musicList.html">预览</a>
-这个组件能帮你轻松完成表格的增删改查，你只需要导入指定信息，提供删除，上传函数，就可以运行该组件
-参考
+<a href="http://tclound.com/oop/%E8%A1%A8%E6%A0%BC%E6%8F%92%E4%BB%B6/customer/musicList.html">预览</a><br>
+
+这个组件能帮你轻松完成表格的增删改查，你只需要导入指定信息，提供删除，上传函数，
+就可以运行该组件,详细参考<a href="https://github.com/codingXiaoZ/oop/issues/1"></a>
+
 
   
