@@ -7,7 +7,7 @@
 这个3d轮播图组件是基于jquery开发的，
 需要引入jquery，后引入文件的
 参考<br>
-<a href="http://zhoushaw.github.io/oop/issues/2">使用方式</a>
+<a href="https://github.com/zhoushaw/oop/issues/2">使用方式</a>
 
 
 ## 表格组件
@@ -17,7 +17,7 @@
 这个组件能帮你轻松完成表格的增删改查，<br>
 你只需要导入指定信息，提供删除，上传函数，<br>
 就可以运行该组件,详细参考<br/>
-<a href="http://zhoushaw.github.io/oop/issues/1">使用方式</a>
+<a href="https://github.com/zhoushaw/oop/issues/1">使用方式</a>
 
 
   
